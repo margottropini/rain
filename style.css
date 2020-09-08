@@ -1,0 +1,44 @@
+/*# sourceMappingURL=style.css.map */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+.bg-image {
+  background: url(./media/basic-pics/8.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+  filter: blur(2px) contrast(80%); /* le blur me permet de flouter*/
+}
+
+h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.15);
+  padding: 2rem 3rem;
+}
+
+.fa-tint {
+  color: rgb(160, 160, 160);
+  position: absolute;
+  top: -20px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(
+      105vh
+    ); /* me permettra d'évacuer les gouttes vers le bas de l'écran */
+  }
+}
